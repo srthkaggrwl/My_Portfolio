@@ -31,10 +31,10 @@ export default function RootLayout({
             </main>
             <Footer />
           </div>
+          {/* The Toaster should be placed here, inside the ThemeProvider, but outside main content */}
           <Toaster />
         </ThemeProvider>
       </body>
     </html>
   )
 }
-
