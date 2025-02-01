@@ -20,9 +20,8 @@ const techStack = [
   { name: "Node.js", logo: "/nodejs-logo.svg" },
   { name: "Solidity", logo: "/solidity-logo.svg" },
   { name: "Python", logo: "/python-logo.svg" },
+  { name: "TypeScript", logo: "/typescript-logo.svg" },
   { name: "JavaScript", logo: "/javascript-logo.svg" },
-
-
 
 ]
 
