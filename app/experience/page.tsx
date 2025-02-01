@@ -1,27 +1,33 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import Image from "next/image"
+import Link from "next/link"
 
 const experiences = [
   {
-    company: "Blockchain Innovations Inc.",
-    logo: "/blockchain-innovations-logo.png",
-    position: "Senior Blockchain Developer",
-    duration: "Jan 2021 - Present",
+    company: "Flexflier",
+    location: "California, USA",
+    logo: "/flexflier-logo.png",
+    position: "Blockchain Developer",
+    duration: "Sept 2024 - Present | Remote",
+    website: "https://flexflier.com/",
     responsibilities: [
-      "Lead development of smart contracts for DeFi projects",
-      "Architected and implemented scalable blockchain solutions",
-      "Mentored junior developers in blockchain technologies",
+      "Developed a smart contract for ticket booking",
+      "Proposed blockchain-driven loyalty program automation",
+      "Enhanced data integrity using IPFS",
+      "Launched a crypto & fiat ticket payment platform",
     ],
   },
   {
-    company: "Web3 Solutions LLC",
-    logo: "/web3-solutions-logo.png",
-    position: "Full Stack Developer",
-    duration: "Mar 2019 - Dec 2020",
+    company: "Space Application Center, ISRO",
+    location: "Ahmedabad, India",
+    logo: "/Indian_Space_Research_Organisation_Logo.svg.png",
+    position: "Research Intern",
+    duration: "Sept 2023 - Nov 2023 | On-site",
+    website: "https://www.sac.gov.in/",
     responsibilities: [
-      "Developed and maintained decentralized applications",
-      "Integrated Web3 technologies with traditional web stacks",
-      "Optimized gas usage in smart contracts",
+      "Analyzed permissioned blockchain networks like Hyperledger Fabric",
+      "Designed a prototype private blockchain for Data Access control",
+      "Improved traceability and security of sensitive data by 50%",
     ],
   },
   // Add more experiences as needed
@@ -36,16 +42,21 @@ export default function Experience() {
           <Card key={index}>
             <CardHeader>
               <div className="flex items-center space-x-4">
-                <Image
-                  src={exp.logo || "/placeholder.svg"}
-                  alt={exp.company}
-                  width={64}
-                  height={64}
-                  className="rounded-full"
-                />
+                <Link href={exp.website} target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src={exp.logo || "/placeholder.svg"}
+                    alt={exp.company}
+                    width={64}
+                    height={64}
+                    className="rounded-full"
+                  />
+                </Link>
                 <div>
-                  <CardTitle>{exp.position}</CardTitle>
+                  <Link href={exp.website} target="_blank" rel="noopener noreferrer">
+                    <CardTitle>{exp.position}</CardTitle>
+                  </Link>
                   <CardDescription>{exp.company}</CardDescription>
+                  <p className="text-xs text-muted-foreground">{exp.location}</p>
                 </div>
               </div>
             </CardHeader>
@@ -63,4 +74,3 @@ export default function Experience() {
     </div>
   )
 }
-
