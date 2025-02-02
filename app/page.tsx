@@ -38,7 +38,9 @@ export default function Home() {
       </p>
       <div className="flex space-x-4 mb-8">
         <Button asChild>
-          <Link href="/about">Learn More</Link>
+          <Link href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
+            Resume
+           </Link>
         </Button>
         <Button asChild variant="outline">
           <Link href="/contact">Get in Touch</Link>

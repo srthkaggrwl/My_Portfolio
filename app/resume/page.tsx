@@ -33,13 +33,19 @@ export default function Resume() {
       <div className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">Education</h2>
         <div>
-          <h3 className="text-xl font-semibold">Bachelor of Science in Computer Science</h3>
-          <p>University Name, Graduation Year</p>
+          <h3 className="text-xl font-semibold">Bachelor of Technology in Computer Science</h3>
+          <p>Vellore Institute of Technology, Vellore, Tamil Nadu</p>
+          <p>2021-2025</p>          
         </div>
+        <div>
+          <h3 className="text-xl font-semibold">Higher Secondary School</h3>
+          <p>St. Francis De Sales School, Janakpuri, New Delhi</p>
+          <p>2020-2021</p>          
+        </div>        
       </div>
       <div>
         <Button asChild>
-          <Link href="/your-resume.pdf" target="_blank" rel="noopener noreferrer">
+          <Link href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
             Download Full Resume (PDF)
           </Link>
         </Button>

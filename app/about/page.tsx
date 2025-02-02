@@ -7,16 +7,19 @@ const skills = [
   { name: "JavaScript", level: 95 },
   { name: "React", level: 90 },
   { name: "Node.js", level: 85 },
-  { name: "Web3.js", level: 80 },
-  { name: "IPFS", level: 75 },
+  { name: "HTML", level: 80 },
+  { name: "CSS", level: 75 },
 ]
 
 const techStack = [
-  { name: "React", logo: "/react-logo.png" },
-  { name: "Node.js", logo: "/nodejs-logo.png" },
-  { name: "Solidity", logo: "/solidity-logo.png" },
-  { name: "Web3.js", logo: "/web3js-logo.png" },
-  { name: "IPFS", logo: "/ipfs-logo.png" },
+  { name: "HTML", logo: "/html-logo.svg" },
+  { name: "CSS", logo: "/css-logo.svg" },
+  { name: "React", logo: "/react_logo.svg" },
+  { name: "Node.js", logo: "/nodejs-logo.svg" },
+  { name: "Solidity", logo: "/solidity-logo.svg" },
+  { name: "Python", logo: "/python-logo.svg" },
+  { name: "TypeScript", logo: "/typescript-logo.svg" },
+  { name: "JavaScript", logo: "/javascript-logo.svg" },
 ]
 
 export default function About() {
