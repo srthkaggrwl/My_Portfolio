@@ -91,7 +91,7 @@ export default function Education() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {edu.activities.map((activity, i) => (
                   <div key={i} className="flex items-start space-x-3">
-                    {activity.logo && (
+                    {"logo" in activity && (
                       <Image src={activity.logo} alt={activity.title} width={40} height={40} className="rounded-md" />
                     )}
                     <div>
