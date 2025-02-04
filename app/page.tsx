@@ -1,13 +1,16 @@
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Progress } from "@/components/ui/progress"
-import Projects from "@/components/Projects" // Correct relative import
-import Education from "@/components/Education"; // Correct relative import
-import Experience from "@/components/Experience"; // Correct relative import
-import Certifications from "@/components/Certifications"; // Correct relative import
-import Contact from "@/components/Contact"; // Correct relative import
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Progress } from "@/components/ui/progress";
+import Projects from "@/components/Projects";
+import Education from "@/components/Education";
+import Experience from "@/components/Experience";
+import Certifications from "@/components/Certifications";
+import Contact from "@/components/Contact";
+
+const repository = "My_Portfolio";
+const basePath = process.env.NODE_ENV === "production" ? `/${repository}` : "";
 
 const skills = [
   { name: "Solidity", level: 90 },
@@ -16,9 +19,7 @@ const skills = [
   { name: "Node.js", level: 85 },
   { name: "HTML", level: 80 },
   { name: "CSS", level: 75 },
-]
-
-const basePath = "/My_Portfolio";
+];
 
 const techStack = [
   { name: "HTML", logo: `${basePath}/html-logo.svg` },
@@ -32,11 +33,10 @@ const techStack = [
   { name: "Python", logo: `${basePath}/python-logo.svg` },
 ];
 
-
 export default function Home() {
   return (
     <div id="home" className="flex flex-col items-center justify-center min-h-screen py-2 scroll-mt-16 py-8">
-      <Image src="Profile_pic.jpg" alt="Your Name" width={200} height={200} className="rounded-full mb-8" />
+      <Image src={`${basePath}/Profile_pic.jpg`} alt="Your Name" width={200} height={200} className="rounded-full mb-8" />
       <h1 className="text-4xl font-bold mb-2">Hi, I'm Sarthak</h1>
       <h2 className="text-2xl mb-4">Full-stack Developer & Blockchain Enthusiast</h2>
       <p className="text-center max-w-xl mb-8">
@@ -46,12 +46,12 @@ export default function Home() {
       </p>
       <div className="flex space-x-4 mb-8">
         <Button asChild>
-          <Link href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
+          <Link href={`${basePath}/Resume.pdf`} target="_blank" rel="noopener noreferrer">
             Resume
-           </Link>
+          </Link>
         </Button>
         <Button asChild variant="outline">
-          <Link href="/contact">Get in Touch</Link>
+          <Link href={`${basePath}/contact`}>Get in Touch</Link>
         </Button>
       </div>
 
@@ -105,25 +105,23 @@ export default function Home() {
           </CardContent>
         </Card>
       </div>
-      
-      {/* Projects Section */}
-      <div id="projects" className="py-12 w-full scroll-mt-10"> 
-        <Projects /> 
-      </div>
 
       {/* Other Sections */}
-      <div id="education" className="py-12 w-full scroll-mt-1 ">
-        <Education /> 
+      <div id="projects" className="py-12 w-full scroll-mt-10">
+        <Projects />
       </div>
-      <div id="experience" className="py-12 w-full scroll-mt-2 ">
-        <Experience /> 
+      <div id="education" className="py-12 w-full scroll-mt-1">
+        <Education />
+      </div>
+      <div id="experience" className="py-12 w-full scroll-mt-2">
+        <Experience />
       </div>
       <div id="certifications" className="py-12 w-full scroll-mt-5">
-        <Certifications /> 
+        <Certifications />
       </div>
       <div id="contact" className="scroll-mt-20 w-full py-12">
-        <Contact /> 
+        <Contact />
       </div>
     </div>
-  )
+  );
 }
