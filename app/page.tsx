@@ -19,7 +19,7 @@ const skills = [
 ]
 
 const techStack = [
-  { name: "HTML", logo: "/html-logo.svg" },
+  { name: "HTML", logo: "/My_Portfolio/html-logo.svg" },
   { name: "CSS", logo: "/css-logo.svg" },
   { name: "React", logo: "/react_logo.svg" },
   { name: "Node.js", logo: "/nodejs-logo.svg" },
