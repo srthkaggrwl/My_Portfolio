@@ -51,7 +51,7 @@ export default function Home() {
           </Link>
         </Button>
         <Button asChild variant="outline">
-          <Link href={`${basePath}/contact`}>Get in Touch</Link>
+          <Link href="#contact">Get in Touch</Link>
         </Button>
       </div>
 
@@ -68,6 +68,17 @@ export default function Home() {
               experience in building decentralized applications and web platforms, I bring a unique blend of technical
               expertise and creative problem-solving to every project. My goal is to leverage cutting-edge technologies to
               create innovative solutions that drive the future of web development and decentralized systems.
+            </p>
+            <br></br>
+            <p>
+              
+              Currently pursuing a BTech in Computer Engineering at Vellore Institute of Technology, my academic 
+              foundation complements my practical experience, enabling me to contribute to cutting-edge projects.
+              With a robust understanding of blockchain's potential, I'm driven to innovate within this space. 
+              The experience gained as a Research Intern at Space Applications Centre, ISRO, where I enhanced 
+              traceability by 50% through a private blockchain prototype, illustrates my commitment to creating 
+              secure and efficient systems & at Flexflier, where my role as a Blockchain Developer taps into my Web3, front-end development, and blockchain architecture skills. 
+              I value collaboration and am dedicated to delivering solutions that are impactful and align with the organization's strategic vision.
             </p>
           </CardContent>
         </Card>

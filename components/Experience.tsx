@@ -35,11 +35,11 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <div id = "Experience" className="py-12 scroll-mt-16">
-      <h1 className="text-4xl font-bold mb-8">Work Experience</h1>
-      <div className="space-y-6">
+    <div id="Experience" className="py-12 scroll-mt-16">
+      <h1 className="text-4xl font-bold mb-8 text-center">Work Experience</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-4">
         {experiences.map((exp, index) => (
-          <Card key={index}>
+          <Card key={index} className="h-full">
             <CardHeader>
               <div className="flex items-center space-x-4">
                 <Link href={exp.website} target="_blank" rel="noopener noreferrer">
@@ -72,5 +72,5 @@ export default function Experience() {
         ))}
       </div>
     </div>
-  )
+  );
 }
