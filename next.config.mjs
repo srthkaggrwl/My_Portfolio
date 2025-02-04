@@ -10,8 +10,8 @@ try {
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export", // Required for GitHub Pages
-  basePath: `/${repository}`, // Ensures correct routing
-  assetPrefix: `/${repository}/`, // Fixes broken asset paths
+  basePath: process.env.NODE_ENV === "production" ? `/${repository}` : "",
+  assetPrefix: process.env.NODE_ENV === "production" ? `/${repository}/` : "",
   eslint: {
     ignoreDuringBuilds: true,
   },

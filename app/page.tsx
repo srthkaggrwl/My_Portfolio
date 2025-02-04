@@ -18,18 +18,20 @@ const skills = [
   { name: "CSS", level: 75 },
 ]
 
-const techStack = [
-  { name: "HTML", logo: "/My_Portfolio/html-logo.svg" },
-  { name: "CSS", logo: "/css-logo.svg" },
-  { name: "React", logo: "/react_logo.svg" },
-  { name: "Node.js", logo: "/nodejs-logo.svg" },
-  { name: "TypeScript", logo: "/typescript-logo.svg" },
-  { name: "NextJS", logo: "/nextjs.svg" },
-  { name: "JavaScript", logo: "/javascript-logo.svg" },
-  { name: "Solidity", logo: "/solidity-logo.svg" },
-  { name: "Python", logo: "/python-logo.svg" },
+const basePath = "/My_Portfolio";
 
-]
+const techStack = [
+  { name: "HTML", logo: `${basePath}/html-logo.svg` },
+  { name: "CSS", logo: `${basePath}/css-logo.svg` },
+  { name: "React", logo: `${basePath}/react_logo.svg` },
+  { name: "Node.js", logo: `${basePath}/nodejs-logo.svg` },
+  { name: "TypeScript", logo: `${basePath}/typescript-logo.svg` },
+  { name: "NextJS", logo: `${basePath}/nextjs.svg` },
+  { name: "JavaScript", logo: `${basePath}/javascript-logo.svg` },
+  { name: "Solidity", logo: `${basePath}/solidity-logo.svg` },
+  { name: "Python", logo: `${basePath}/python-logo.svg` },
+];
+
 
 export default function Home() {
   return (
