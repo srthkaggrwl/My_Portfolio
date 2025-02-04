@@ -24,7 +24,7 @@ export default function Header() {
     <header className="bg-background sticky top-0 z-40 w-full border-b">
       <div className="container flex h-16 items-center justify-between px-10 pl-15"> {/* Reduced right padding */}
         {/* Left-aligned name with equal left padding */}
-        <Link href="/" className="text-xl md:text-2xl font-bold">
+        <Link href="#home" className="text-xl md:text-2xl font-bold">
           Sarthak Aggarwal
         </Link>
 
