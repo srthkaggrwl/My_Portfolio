@@ -1,3 +1,5 @@
+import { useRouter } from "next/router"
+import Head from "next/head"
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";

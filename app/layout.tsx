@@ -1,28 +1,36 @@
-import { Inter } from "next/font/google"
-import "./globals.css"
-import Header from "./components/Header"
-import Navbar from "./components/Navbar"
-import { ThemeProvider } from "./components/ThemeProvider"
-import Footer from "./components/Footer"
-import { Toaster } from "@/components/ui/toaster"
-import type React from "react" // Import React
+import { Inter } from "next/font/google";
+import "./globals.css";
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import { ThemeProvider } from "./components/ThemeProvider";
+import Footer from "./components/Footer";
+import { Toaster } from "@/components/ui/toaster";
+import type React from "react"; // Import React
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Sarthak's Portfolio",
   description: "Full-stack Developer & Blockchain Enthusiast",
-}
+  icons: {
+    icon: "/SA.jpg", // This correctly sets the favicon
+  },
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="scroll-smooth">
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
           <div className="flex min-h-screen flex-col">
             <Header />
             <Navbar />
@@ -31,10 +39,9 @@ export default function RootLayout({
             </main>
             <Footer />
           </div>
-          {/* The Toaster should be placed here, inside the ThemeProvider, but outside main content */}
           <Toaster />
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }
