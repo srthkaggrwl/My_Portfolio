@@ -1,4 +1,4 @@
-const repository = "your-repo-name"; // Replace with your actual GitHub repository name
+const repository = "My_Portfolio"; // Replace with your actual GitHub repository name
 
 let userConfig = undefined;
 try {
