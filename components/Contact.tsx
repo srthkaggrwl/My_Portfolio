@@ -69,7 +69,7 @@ export default function Contact() {
   }
 
   return (
-    <div className="py-12 relative">
+    <div id = "Contacts" className="py-12 relative scroll-mt-16">
       {/* Notification popup centered at the top of the container */}
       {notification && (
         <div

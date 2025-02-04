@@ -50,7 +50,7 @@ const certifications = [
 
 export default function Certifications() {
   return (
-    <div className="py-12">
+    <div id = "Certifications" className="py-12 scroll-mt-16">
       <h1 className="text-4xl font-bold mb-8">Certifications</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {certifications.map((cert, index) => (

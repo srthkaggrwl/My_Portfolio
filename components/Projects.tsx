@@ -37,8 +37,8 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="py-2">
-      <h1 className="text-4xl font-bold mb-8">My Projects</h1>
+    <div className="py-2 scroll-mt-16">
+      <h1 id="projects" className="text-4xl font-bold mb-8">My Projects</h1> {/* ID moved here */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"> {/* Updated grid for 3 columns */}
         {projects.map((project, index) => (
           <Card key={index} className="flex flex-col">
@@ -79,5 +79,5 @@ export default function Projects() {
         ))}
       </div>
     </div>
-  )
+  );
 }

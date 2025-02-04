@@ -35,7 +35,7 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <div className="py-12">
+    <div id = "Experience" className="py-12 scroll-mt-16">
       <h1 className="text-4xl font-bold mb-8">Work Experience</h1>
       <div className="space-y-6">
         {experiences.map((exp, index) => (

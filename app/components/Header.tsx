@@ -7,13 +7,13 @@ import { MoonIcon, SunIcon } from "lucide-react";
 import { useTheme } from "next-themes";
 
 const navItems = [
-  { href: "/", label: "Home" },
-  // { href: "/about", label: "About" },
-  { href: "/projects", label: "Projects" },
-  { href: "/education", label: "Education" },
-  { href: "/experience", label: "Experience" },
-  { href: "/certifications", label: "Certifications" },
-  { href: "/contact", label: "Contact" },
+  { href: "#home", label: "Home" },
+  { href: "#about", label: "About" },
+  { href: "#projects", label: "Projects" },
+  { href: "#education", label: "Education" },
+  { href: "#experience", label: "Experience" },
+  { href: "#certifications", label: "Certifications" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export default function Header() {

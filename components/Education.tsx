@@ -69,8 +69,8 @@ const education = [
 
 export default function Education() {
   return (
-    <div className="py-12">
-      <h1 className="text-4xl font-bold mb-8 text-center">Education</h1>
+    <div id = "Education" className="py-12 scroll-mt-1">
+      <h1 className="text-4xl font-bold mb-8 text-center ">Education</h1>
       <div className="space-y-8">
         {education.map((edu, index) => (
           <Card key={index} className="shadow-lg hover:shadow-xl transition">
