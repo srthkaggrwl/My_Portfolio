@@ -51,12 +51,20 @@ const education = [
         description:
           "Organized interschool competitions and led the school's marching contingent during Sports Day.",
       },
+  
       {
         title: "Food Collection & Distribution Coordinator",
         duration: "Apr 2018 - Mar 2021",
         description:
           "Managed food collection and distribution to NGOs, ensuring systematic delivery to underprivileged areas.",
       },
+      {
+        title: "Asst. Prefect",
+        duration: "Apr 2018 - Mar 2019",
+        description:
+          "As head of Pope Paul House, I led the house to victory in academics and extracurriculars, securing annual prizes in both categories.",
+      },    
+
       {
         title: "Road Safety Club Coordinator",
         duration: "Apr 2018 - Mar 2021",

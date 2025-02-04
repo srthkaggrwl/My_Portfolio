@@ -1,4 +1,3 @@
-import { useRouter } from "next/router"
 import Head from "next/head"
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -26,6 +25,7 @@ const skills = [
 const techStack = [
   { name: "HTML", logo: `${basePath}/html-logo.svg` },
   { name: "CSS", logo: `${basePath}/css-logo.svg` },
+  { name: "MongoDB", logo: `${basePath}/mongodb.svg` },
   { name: "React", logo: `${basePath}/react_logo.svg` },
   { name: "Node.js", logo: `${basePath}/nodejs-logo.svg` },
   { name: "TypeScript", logo: `${basePath}/typescript-logo.svg` },
@@ -33,6 +33,17 @@ const techStack = [
   { name: "JavaScript", logo: `${basePath}/javascript-logo.svg` },
   { name: "Solidity", logo: `${basePath}/solidity-logo.svg` },
   { name: "Python", logo: `${basePath}/python-logo.svg` },
+];
+
+const toolsStack = [
+  { name: "Git", logo: `${basePath}/git.svg` },
+  { name: "Postman", logo: `${basePath}/postman.svg` },
+  { name: "Docker", logo: `${basePath}/docker.svg` },
+  { name: "Truffle", logo: `${basePath}/truffle.png` },
+  { name: "VScode", logo: `${basePath}/VScode.svg` },
+  { name: "IPFS", logo: `${basePath}/ipfs.svg` },
+  { name: "Ethereum", logo: `${basePath}/ethereum.svg` },
+  { name: "Digital Ocean", logo: `${basePath}/digitalOcean.svg` },
 ];
 
 export default function Home() {
@@ -84,7 +95,7 @@ export default function Home() {
             </p>
           </CardContent>
         </Card>
-        <Card className="mb-8">
+        {/* <Card className="mb-8">
           <CardHeader>
             <CardTitle>Skills</CardTitle>
           </CardHeader>
@@ -101,7 +112,7 @@ export default function Home() {
               ))}
             </div>
           </CardContent>
-        </Card>
+        </Card> */}
         <Card>
           <CardHeader>
             <CardTitle>Tech Stack</CardTitle>
@@ -112,6 +123,23 @@ export default function Home() {
                 <div key={tech.name} className="flex flex-col items-center">
                   <Image src={tech.logo || "/placeholder.svg"} alt={tech.name} width={64} height={64} />
                   <span className="mt-2 text-sm">{tech.name}</span>
+                </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+        
+        
+        <Card>
+          <CardHeader>
+            <CardTitle>Software & Tools</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="flex flex-wrap justify-center gap-4">
+              {toolsStack.map((tool) => (
+                <div key={tool.name} className="flex flex-col items-center">
+                  <Image src={tool.logo || "/placeholder.svg"} alt={tool.name} width={64} height={64} />
+                  <span className="mt-2 text-sm">{tool.name}</span>
                 </div>
               ))}
             </div>

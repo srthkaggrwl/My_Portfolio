@@ -32,6 +32,15 @@ const projects = [
     github: "https://github.com/srthkaggrwl/EHR_Management_System",
     demo: "https://nft-marketplace-demo.com",
   },
+
+    {
+    title: "Media Authentication Platform using Blockchain ",
+    description: "A decentralized media authentication and publishing system that leverages blockchain and QR codes to verify content authenticity, prevent misinformation, and detect tampered media.",
+    image: "/media_auth.jpeg",
+    technologies: ["Solidity", "Truffle", "JavaScript", "HTML", "CSS", "Ethereum"],
+    github: "https://github.com/srthkaggrwl/Media_Authentication_System",
+    demo: "https://nft-marketplace-demo.com",
+  },
   // Add more projects as needed
 ]
 
