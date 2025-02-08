@@ -62,7 +62,7 @@ export default function Home() {
       </p>
       <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
         <Button asChild>
-          <Link href="https://drive.google.com/file/d/16DYzoFVSlGINpVgaeF2jVHDnW6FInSCE/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+          <Link href="https://drive.google.com/file/d/16DYzoFVSlGINpVgaeF2jVHDnW6FInSCE/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             Resume
           </Link>
         </Button>
