@@ -2,11 +2,14 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import Image from "next/image"
 import Link from "next/link"
 
+const repository = "My_Portfolio";
+const basePath = process.env.NODE_ENV === "production" ? `/${repository}` : "";
+
 const experiences = [
   {
     company: "Flexflier",
     location: "California, USA",
-    logo: "/flexflier-logo.png",
+    logo: `${basePath}/flexflier-logo.png`,
     position: "Blockchain Developer",
     duration: "Sept 2024 - Jan 2025 | Remote",
     website: "https://flexflier.com/",
@@ -19,7 +22,7 @@ const experiences = [
   {
     company: "Space Application Center, ISRO",
     location: "Ahmedabad, India",
-    logo: "/Indian_Space_Research_Organisation_Logo.svg.png",
+    logo: `${basePath}/Indian_Space_Research_Organisation_Logo.svg.png`,
     position: "Research Intern",
     duration: "Sept 2023 - Nov 2023 | On-site",
     website: "https://www.sac.gov.in/",

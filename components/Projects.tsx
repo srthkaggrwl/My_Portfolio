@@ -4,12 +4,15 @@ import Image from "next/image"
 import Link from "next/link"
 import { FaGithub } from "react-icons/fa"  // Import GitHub icon
 
+const repository = "My_Portfolio";
+const basePath = process.env.NODE_ENV === "production" ? `/${repository}` : "";
+
 const projects = [
 
   {
     title: "Corporate Governance Voting System",
     description: "Built a DAO-based blockchain voting system on Polygon for secure, transparent corporate governance",
-    image: "/Corporate_voting.jpg",
+    image: `${basePath}/Corporate_voting.jpg`,
     technologies: ["Solidity", "Truffle", "JavaScript", "Web3.js", "HTML", "CSS", "Polygon"],
     github: "https://github.com/srthkaggrwl/Voting-System-for-Corporate-Governance",
     demo: "https://nft-marketplace-demo.com",
@@ -18,7 +21,7 @@ const projects = [
   {
     title: "Animal Detection & Warning System",
     description: "AI-powered highway safety system using thermal sensors, ML, and real-time alerts to reduce animal-road incidents",
-    image: "/Animal-detection-warning-system.jpeg",
+    image: `${basePath}/Animal-detection-warning-system.jpeg`,
     technologies: ["Streamlit", "AI", "ML", "Yolov8", "OpenCV", "MQTT", "Micropython"],
     github: "https://github.com/srthkaggrwl/A-Real-Time-IoT-Based-Animal-Detection-and-Warning-System",
     demo: "https://drive.google.com/file/d/1objkH_DujT-y51yhIfLLxNbdIsEDSmrj/view?usp=sharing",
@@ -27,7 +30,7 @@ const projects = [
   {
     title: "Electronic Health Record Management System",
     description: "Blockchain-based EHR system with IPFS integration, enhancing data security, access control, and record accuracy",
-    image: "/EHR.jpg",
+    image: `${basePath}/EHR.jpg`,
     technologies: ["Solidity", "Truffle", "JavaScript", "HTML", "CSS", "IPFS", "Pinata", "Ethereum"],
     github: "https://github.com/srthkaggrwl/EHR_Management_System",
     demo: "https://nft-marketplace-demo.com",
@@ -36,7 +39,7 @@ const projects = [
     {
     title: "Media Authentication Platform using Blockchain ",
     description: "A decentralized media authentication and publishing system that leverages blockchain and QR codes to verify content authenticity, prevent misinformation, and detect tampered media.",
-    image: "/media_auth.jpeg",
+    image: `${basePath}/media_auth.jpeg`,
     technologies: ["Solidity", "Truffle", "JavaScript", "HTML", "CSS", "Ethereum"],
     github: "https://github.com/srthkaggrwl/Media_Authentication_System",
     demo: "https://nft-marketplace-demo.com",
@@ -44,7 +47,7 @@ const projects = [
   {
     title: "Spotify Clone",
     description: "A full-stack music streaming platform inspired by Spotify, built with Next.js and Supabase for seamless audio playback, user authentication, and playlist management.",
-    image: "/spotify.jpg",
+    image: `${basePath}/spotify.jpg`,
     technologies: ["Typescript", "Next.js", "React", "Supabase"],
     github: "https://github.com/srthkaggrwl/Spotify-clone",
     demo: "https://nft-marketplace-demo.com",

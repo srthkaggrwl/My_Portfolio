@@ -5,11 +5,14 @@ import Link from "next/link";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 
+const repository = "My_Portfolio";
+const basePath = process.env.NODE_ENV === "production" ? `/${repository}` : "";
+
 const education = [
   {
     institution: "Vellore Institute of Technology",
     location: "Vellore, India",
-    logo: "/vit.png",
+    logo:  `${basePath}/vit.png`,
     degree: "B.Tech, Computer Engineering",
     duration: "2021 - 2025",
     grade: "8.83/10",
@@ -17,21 +20,21 @@ const education = [
       {
         title: "Sergeant - National Cadet Corps (Army Wing)",
         duration: "Jan 2023 - Feb 2024",
-        logo: "/ncc.png",
+        logo:  `${basePath}/ncc.png`,
         description:
           "Led 150 cadets as a Drill Instructor, honing leadership, discipline, and project management skills. Earned the prestigious 'C' Certificate.",
       },
       {
         title: "Core Committee Member - InnovatorsQuest",
         duration: "Mar 2022 - Apr 2023",
-        logo: "/iquest.jpeg",
+        logo:  `${basePath}/iquest.jpeg`,
         description:
           "Gained valuable knowledge through competitions and activities. Guided and mentored juniors in technical pursuits.",
       },
       {
         title: "MUN Delegate - DISEC",
         duration: "Apr 2023",
-        logo: "/mun.jpeg",
+        logo:  `${basePath}/mun.jpeg`,
         description:
           "Represented Austria in DISEC at Model United Nations, addressing maritime security and economic cooperation.",
       },
@@ -40,7 +43,7 @@ const education = [
   {
     institution: "St. Francis de Sales Senior Secondary School",
     location: "New Delhi, India",
-    logo: "/sfs.png",
+    logo:  `${basePath}/sfs.png`,
     degree: "Higher Secondary",
     duration: "2009 - 2021",
     grade: "96.4%",
