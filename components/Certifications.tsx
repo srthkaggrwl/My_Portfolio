@@ -3,11 +3,14 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 
+const repository = "My_Portfolio";
+const basePath = process.env.NODE_ENV === "production" ? `/${repository}` : "";
+
 const certifications = [
   {
     name: "The Complete Data Structure & Algorithm Course in Python",
     organization: "Udemy",
-    logo: "/udemy.png",
+    logo: `${basePath}/udemy.png`,
     date: "January 2024",
     verificationLink: "https://www.udemy.com/certificate/UC-4c2d210c-493e-404c-a679-9f7bdbde7cf5/",
   },

@@ -43,7 +43,7 @@ const toolsStack = [
   { name: "VScode", logo: `${basePath}/VScode.svg` },
   { name: "IPFS", logo: `${basePath}/ipfs.svg` },
   { name: "Ethereum", logo: `${basePath}/ethereum.svg` },
-  { name: "Digital Ocean", logo: `${basePath}/digitalOcean.svg` },
+  { name: "Digital Ocean", logo: `${basePath}/digitalocean.svg` },
   { name: "Ubuntu", logo: `${basePath}/ubuntu.svg` },
 ];
 
