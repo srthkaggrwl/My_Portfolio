@@ -9,11 +9,14 @@ import type React from "react"; // Import React
 
 const inter = Inter({ subsets: ["latin"] });
 
+const repository = "My_Portfolio";
+const basePath = process.env.NODE_ENV === "production" ? `/${repository}` : "";
+
 export const metadata = {
   title: "Sarthak's Portfolio",
   description: "Full-stack Developer & Blockchain Enthusiast",
   icons: {
-    icon: "/SA.jpg", // This correctly sets the favicon
+    icon: `${basePath}/SA.jpg`, // This correctly sets the favicon
   },
 };
 
