@@ -38,12 +38,13 @@ const techStack = [
 const toolsStack = [
   { name: "Git", logo: `${basePath}/git.svg` },
   { name: "Postman", logo: `${basePath}/postman.svg` },
-  { name: "Docker", logo: `${basePath}/docker.svg` },
-  { name: "Truffle", logo: `${basePath}/truffle.png` },
+  { name: "Digital Ocean", logo: `${basePath}/digitalocean.svg` },
   { name: "VScode", logo: `${basePath}/VScode.svg` },
+  { name: "Truffle", logo: `${basePath}/truffle.png` },
+  { name: "Confluence", logo: `${basePath}/confluence.svg` },
   { name: "IPFS", logo: `${basePath}/ipfs.svg` },
   { name: "Ethereum", logo: `${basePath}/ethereum.svg` },
-  { name: "Digital Ocean", logo: `${basePath}/digitalocean.svg` },
+  { name: "Docker", logo: `${basePath}/docker.svg` },
   { name: "Ubuntu", logo: `${basePath}/ubuntu.svg` },
 ];
 
@@ -91,7 +92,7 @@ export default function Home() {
             <CardTitle>Tech Stack</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-3 sm:grid-cols-5 gap-4 justify-center">
+            <div className="flex flex-wrap justify-center gap-4">
               {techStack.map((tech) => (
                 <div key={tech.name} className="flex flex-col items-center">
                   <Image src={tech.logo || "/placeholder.svg"} alt={tech.name} width={48} height={48} className="sm:w-16 sm:h-16" />
@@ -106,7 +107,7 @@ export default function Home() {
             <CardTitle>Software and Tools</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-3 sm:grid-cols-5 gap-4 justify-center">
+            <div className="flex flex-wrap justify-center gap-4">
               {toolsStack.map((tool) => (
                 <div key={tool.name} className="flex flex-col items-center">
                   <Image src={tool.logo || "/placeholder.svg"} alt={tool.name} width={48} height={48} className="sm:w-16 sm:h-16" />

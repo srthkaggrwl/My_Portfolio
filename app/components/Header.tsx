@@ -27,7 +27,7 @@ export default function Header() {
       <div className="container flex h-16 items-center justify-between px-6 md:px-10">
         {/* Brand Name */}
         <Link href="#home" className="text-xl md:text-2xl font-bold">
-          Sarthak Aggarwal
+          My Portfolio
         </Link>
 
         {/* Navigation Menu */}
@@ -45,7 +45,7 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-8 ml-5">
+        <div className="flex items-center gap-8 ml-auto">
           {/* Dark Mode Toggle (Visible in Desktop) */}
           <div className="hidden md:flex">
             <Button
@@ -61,7 +61,7 @@ export default function Header() {
           </div>
 
           {/* Mobile Menu Button & Dark Mode Toggle (Visible in Mobile) */}
-          <div className="md:hidden flex items-center gap-2">
+          <div className="md:hidden flex items-center gap-2 ml-auto">
             <Button
               variant="ghost"
               size="icon"
@@ -81,7 +81,7 @@ export default function Header() {
 
       {/* Mobile Navigation Menu */}
       {isMenuOpen && (
-        <div className="md:hidden absolute top-16 left-0 w-full bg-background border-b shadow-md p-4 flex flex-col gap-4">
+        <div className="md:hidden absolute top-16 right-0 w-1/3 bg-background border rounded-lg shadow-md p-4 flex flex-col gap-4">
           {navItems.map((item) => (
             <Link
               key={item.href}
