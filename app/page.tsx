@@ -44,6 +44,7 @@ const toolsStack = [
   { name: "IPFS", logo: `${basePath}/ipfs.svg` },
   { name: "Ethereum", logo: `${basePath}/ethereum.svg` },
   { name: "Digital Ocean", logo: `${basePath}/digitalOcean.svg` },
+  { name: "Ubuntu", logo: `${basePath}/ubuntu.svg` },
 ];
 
 export default function Home() {
@@ -54,8 +55,9 @@ export default function Home() {
       <h2 className="text-2xl mb-4">Full-stack Developer & Blockchain Enthusiast</h2>
       <p className="text-center max-w-xl mb-8">
         Welcome to my portfolio! I'm passionate about building innovative solutions using cutting-edge technologies.
-        With expertise in blockchain, full-stack development, and a keen eye for user experience, I strive to create
-        impactful and efficient applications.
+        With expertise in blockchain, full-stack development, 
+        I value collaboration and am dedicated to delivering solutions that are impactful and align 
+        with the organization's strategic vision.
       </p>
       <div className="flex space-x-4 mb-8">
         <Button asChild>
@@ -77,22 +79,11 @@ export default function Home() {
           </CardHeader>
           <CardContent>
             <p>
-              I am a passionate full-stack developer with a strong focus on blockchain technology. With extensive
-              experience in building decentralized applications and web platforms, I bring a unique blend of technical
-              expertise and creative problem-solving to every project. My goal is to leverage cutting-edge technologies to
-              create innovative solutions that drive the future of web development and decentralized systems.
-            </p>
+             Currently a final-year student at VIT, Vellore campus, pursuing a B.Tech in Computer Engineering with a specialization in Blockchain Technology, I combine academic knowledge with hands-on experience in full-stack and blockchain development. I have a strong foundation in JavaScript, TypeScript, Solidity, and Python, with expertise in React.js, Next.js, Node.js, and smart contract development. Passionate about decentralized systems, Web3, and scalable applications, I enjoy building innovative solutions that enhance security, transparency, and efficiency. </p>
             <br></br>
             <p>
               
-              Currently pursuing a BTech in Computer Engineering at Vellore Institute of Technology, my academic 
-              foundation complements my practical experience, enabling me to contribute to cutting-edge projects.
-              With a robust understanding of blockchain's potential, I'm driven to innovate within this space. 
-              The experience gained as a Research Intern at Space Applications Centre, ISRO, where I enhanced 
-              traceability by 50% through a private blockchain prototype, illustrates my commitment to creating 
-              secure and efficient systems & at Flexflier, where my role as a Blockchain Developer taps into my Web3, front-end development, and blockchain architecture skills. 
-              I value collaboration and am dedicated to delivering solutions that are impactful and align with the organization's strategic vision.
-            </p>
+            As a Research Intern at ISRO’s Space Applications Centre, I improved traceability by 50% using a private blockchain prototype, demonstrating my ability to develop secure and efficient systems. At Flexflier, I leverage my Web3 and blockchain architecture skills to create scalable solutions. Driven by a problem-solving mindset and a passion for emerging technologies, I am committed to contributing to the future of decentralized applications and full-stack development.  </p>
           </CardContent>
         </Card>
         {/* <Card className="mb-8">

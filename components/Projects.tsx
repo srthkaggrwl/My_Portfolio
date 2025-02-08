@@ -21,7 +21,7 @@ const projects = [
     image: "/Animal-detection-warning-system.jpeg",
     technologies: ["Streamlit", "AI", "ML", "Yolov8", "OpenCV", "MQTT", "Micropython"],
     github: "https://github.com/srthkaggrwl/A-Real-Time-IoT-Based-Animal-Detection-and-Warning-System",
-    demo: "https://dex-project-demo.com",
+    demo: "https://drive.google.com/file/d/1objkH_DujT-y51yhIfLLxNbdIsEDSmrj/view?usp=sharing",
   },
 
   {
@@ -41,6 +41,14 @@ const projects = [
     github: "https://github.com/srthkaggrwl/Media_Authentication_System",
     demo: "https://nft-marketplace-demo.com",
   },
+  {
+    title: "Spotify Clone",
+    description: "A full-stack music streaming platform inspired by Spotify, built with Next.js and Supabase for seamless audio playback, user authentication, and playlist management.",
+    image: "/spotify.jpg",
+    technologies: ["Typescript", "Next.js", "React", "Supabase"],
+    github: "https://github.com/srthkaggrwl/Spotify-clone",
+    demo: "https://nft-marketplace-demo.com",
+  },  
   // Add more projects as needed
 ]
 
@@ -50,7 +58,7 @@ export default function Projects() {
       <h1 id="projects" className="text-4xl font-bold mb-8">My Projects</h1> {/* ID moved here */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"> {/* Updated grid for 3 columns */}
         {projects.map((project, index) => (
-          <Card key={index} className="flex flex-col">
+          <Card key={index} className="shadow-lg hover:shadow-xl transition flex flex-col">
             <CardContent className="flex-grow p-0">
               <Image
                 src={project.image || "/placeholder.svg"}

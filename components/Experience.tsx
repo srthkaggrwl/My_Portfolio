@@ -8,13 +8,12 @@ const experiences = [
     location: "California, USA",
     logo: "/flexflier-logo.png",
     position: "Blockchain Developer",
-    duration: "Sept 2024 - Present | Remote",
+    duration: "Sept 2024 - Jan 2025 | Remote",
     website: "https://flexflier.com/",
     responsibilities: [
-      "Developed a smart contract for ticket booking",
-      "Proposed blockchain-driven loyalty program automation",
-      "Enhanced data integrity using IPFS",
-      "Launched a crypto & fiat ticket payment platform",
+      "Developed a PoC for a blockchain-based ticket booking system, enhancing security and reducing validation time.",
+      "Optimized corporate travel expense management, including airfare, accommodation, and transportation.",
+      "Recommended multi-currency blockchain solutions, streamlining cross-border transactions and ensuring compliance.",
     ],
   },
   {
@@ -25,9 +24,9 @@ const experiences = [
     duration: "Sept 2023 - Nov 2023 | On-site",
     website: "https://www.sac.gov.in/",
     responsibilities: [
-      "Analyzed permissioned blockchain networks like Hyperledger Fabric",
-      "Designed a prototype private blockchain for Data Access control",
-      "Improved traceability and security of sensitive data by 50%",
+      "Analyzed permissioned blockchain networks, identifying key use cases to improve efficiency by 40%.",
+      "Designed a Hyperledger Fabric prototype, enhancing access control, security, and traceability by 50%.",
+      "Explored blockchain applications for safeguarding sensitive data.",
     ],
   },
   // Add more experiences as needed
@@ -36,10 +35,10 @@ const experiences = [
 export default function Experience() {
   return (
     <div id="Experience" className="py-12 scroll-mt-16">
-      <h1 className="text-4xl font-bold mb-8 text-center">Work Experience</h1>
+      <h1 className="text-4xl font-bold mb-8">Work Experience</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-4">
         {experiences.map((exp, index) => (
-          <Card key={index} className="h-full">
+          <Card key={index} className="shadow-lg hover:shadow-xl transition h-full">
             <CardHeader>
               <div className="flex items-center space-x-4">
                 <Link href={exp.website} target="_blank" rel="noopener noreferrer">

@@ -51,10 +51,10 @@ const certifications = [
 export default function Certifications() {
   return (
     <div id="Certifications" className="py-10">
-      <h1 className="text-4xl font-bold mb-8 text-center">Certifications</h1>
+      <h1 className="text-4xl font-bold mb-8">Certifications</h1>
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
         {certifications.map((cert, index) => (
-          <Card key={index} className="flex flex-col justify-between h-full p-4 ">
+          <Card key={index} className="shadow-lg hover:shadow-xl transition flex flex-col justify-between h-full p-4 ">
             <CardHeader className="flex items-center space-x-4">
               <div className="flex items-center space-x-4">
                 <Image
