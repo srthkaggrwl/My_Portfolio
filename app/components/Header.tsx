@@ -45,7 +45,7 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-8 ml-auto">
+        <div className="flex items-center gap-8 ml-5">
           {/* Dark Mode Toggle (Visible in Desktop) */}
           <div className="hidden md:flex">
             <Button
