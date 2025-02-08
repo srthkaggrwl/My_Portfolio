@@ -49,19 +49,19 @@ const toolsStack = [
 
 export default function Home() {
   return (
-    <div id="home" className="flex flex-col items-center justify-center min-h-screen py-2 scroll-mt-16 py-8">
-      <Image src={`${basePath}/Profile_pic.jpg`} alt="Your Name" width={200} height={200} className="rounded-full mb-8" />
-      <h1 className="text-4xl font-bold mb-2">Hi, I'm Sarthak</h1>
-      <h2 className="text-2xl mb-4">Full-stack Developer & Blockchain Enthusiast</h2>
-      <p className="text-center max-w-xl mb-8">
+    <div id="home" className="flex flex-col items-center justify-center min-h-screen py-2 px-4 sm:px-8 scroll-mt-16 py-8">
+      <Image src={`${basePath}/Profile_pic.jpg`} alt="Your Name" width={200} height={200} className="rounded-full mb-8 w-32 sm:w-48" />
+      <h1 className="text-3xl sm:text-4xl font-bold mb-2">Hi, I'm Sarthak</h1>
+      <h2 className="text-xl sm:text-2xl mb-4 text-center">Full-stack Developer & Blockchain Enthusiast</h2>
+      <p className="text-center max-w-xl mb-8 text-sm sm:text-base">
         Welcome to my portfolio! I'm passionate about building innovative solutions using cutting-edge technologies.
         With expertise in blockchain, full-stack development, 
         I value collaboration and am dedicated to delivering solutions that are impactful and align 
         with the organization's strategic vision.
       </p>
-      <div className="flex space-x-4 mb-8">
+      <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
         <Button asChild>
-          <Link href={"https://drive.google.com/file/d/16DYzoFVSlGINpVgaeF2jVHDnW6FInSCE/view?usp=drive_link"} target="_blank" rel="noopener noreferrer">
+          <Link href="https://drive.google.com/file/d/16DYzoFVSlGINpVgaeF2jVHDnW6FInSCE/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
             Resume
           </Link>
         </Button>
@@ -70,67 +70,47 @@ export default function Home() {
         </Button>
       </div>
 
-      {/* About Section */}
       <div id="about" className="py-12 w-full scroll-mt-16">
-        <h1 className="text-4xl font-bold mb-8">About Me</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold mb-8">About Me</h1>
         <Card className="mb-8">
           <CardHeader>
             <CardTitle>Professional Summary</CardTitle>
           </CardHeader>
           <CardContent>
-            <p>
-             Currently a final-year student at VIT, Vellore campus, pursuing a B.Tech in Computer Engineering with a specialization in Blockchain Technology, I combine academic knowledge with hands-on experience in full-stack and blockchain development. I have a strong foundation in JavaScript, TypeScript, Solidity, and Python, with expertise in React.js, Next.js, Node.js, and smart contract development. Passionate about decentralized systems, Web3, and scalable applications, I enjoy building innovative solutions that enhance security, transparency, and efficiency. </p>
-            <br></br>
-            <p>
-              
-            As a Research Intern at ISRO’s Space Applications Centre, I improved traceability by 50% using a private blockchain prototype, demonstrating my ability to develop secure and efficient systems. At Flexflier, I leverage my Web3 and blockchain architecture skills to create scalable solutions. Driven by a problem-solving mindset and a passion for emerging technologies, I am committed to contributing to the future of decentralized applications and full-stack development.  </p>
+            <p className="text-sm sm:text-base">
+              Currently a final-year student at VIT, Vellore campus, pursuing a B.Tech in Computer Engineering with a specialization in Blockchain Technology, I combine academic knowledge with hands-on experience in full-stack and blockchain development. I have a strong foundation in JavaScript, TypeScript, Solidity, and Python, with expertise in React.js, Next.js, Node.js, and smart contract development. Passionate about decentralized systems, Web3, and scalable applications, I enjoy building innovative solutions that enhance security, transparency, and efficiency.
+            </p>
+            <br />
+            <p className="text-sm sm:text-base">
+              As a Research Intern at ISRO’s Space Applications Centre, I improved traceability by 50% using a private blockchain prototype, demonstrating my ability to develop secure and efficient systems. At Flexflier, I leverage my Web3 and blockchain architecture skills to create scalable solutions. Driven by a problem-solving mindset and a passion for emerging technologies, I am committed to contributing to the future of decentralized applications and full-stack development.
+            </p>
           </CardContent>
         </Card>
-        {/* <Card className="mb-8">
-          <CardHeader>
-            <CardTitle>Skills</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-4">
-              {skills.map((skill) => (
-                <div key={skill.name}>
-                  <div className="flex justify-between mb-1">
-                    <span className="text-sm font-medium">{skill.name}</span>
-                    <span className="text-sm font-medium">{skill.level}%</span>
-                  </div>
-                  <Progress value={skill.level} className="w-full" />
-                </div>
-              ))}
-            </div>
-          </CardContent>
-        </Card> */}
-        <Card>
+        <Card className="mb-8">
           <CardHeader>
             <CardTitle>Tech Stack</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="flex flex-wrap justify-center gap-4">
+            <div className="grid grid-cols-3 sm:grid-cols-5 gap-4 justify-center">
               {techStack.map((tech) => (
                 <div key={tech.name} className="flex flex-col items-center">
-                  <Image src={tech.logo || "/placeholder.svg"} alt={tech.name} width={64} height={64} />
-                  <span className="mt-2 text-sm">{tech.name}</span>
+                  <Image src={tech.logo || "/placeholder.svg"} alt={tech.name} width={48} height={48} className="sm:w-16 sm:h-16" />
+                  <span className="mt-2 text-xs sm:text-sm">{tech.name}</span>
                 </div>
               ))}
             </div>
           </CardContent>
         </Card>
-        
-        
         <Card>
           <CardHeader>
-            <CardTitle>Software & Tools</CardTitle>
+            <CardTitle>Software and Tools</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="flex flex-wrap justify-center gap-4">
+            <div className="grid grid-cols-3 sm:grid-cols-5 gap-4 justify-center">
               {toolsStack.map((tool) => (
                 <div key={tool.name} className="flex flex-col items-center">
-                  <Image src={tool.logo || "/placeholder.svg"} alt={tool.name} width={64} height={64} />
-                  <span className="mt-2 text-sm">{tool.name}</span>
+                  <Image src={tool.logo || "/placeholder.svg"} alt={tool.name} width={48} height={48} className="sm:w-16 sm:h-16" />
+                  <span className="mt-2 text-xs sm:text-sm">{tool.name}</span>
                 </div>
               ))}
             </div>
@@ -138,7 +118,6 @@ export default function Home() {
         </Card>
       </div>
 
-      {/* Other Sections */}
       <div id="projects" className="py-12 w-full scroll-mt-10">
         <Projects />
       </div>
