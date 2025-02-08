@@ -11,7 +11,7 @@ const basePath = process.env.NODE_ENV === "production" ? `/${repository}` : "";
 const education = [
   {
     institution: "Vellore Institute of Technology",
-    location: "Vellore, India",
+    location: "Vellore, Tamil Nadu, India",
     logo:  `${basePath}/vit.png`,
     degree: "B.Tech, Computer Engineering",
     duration: "2021 - 2025",
@@ -42,7 +42,7 @@ const education = [
   },
   {
     institution: "St. Francis de Sales Senior Secondary School",
-    location: "New Delhi, India",
+    location: "Janakpuri, New Delhi, India",
     logo:  `${basePath}/sfs.png`,
     degree: "Higher Secondary",
     duration: "2009 - 2021",
