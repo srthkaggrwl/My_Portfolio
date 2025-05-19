@@ -15,7 +15,7 @@ const education = [
     logo:  `${basePath}/vit.png`,
     degree: "B.Tech, Computer Engineering",
     duration: "2021 - 2025",
-    grade: "8.83/10",
+    grade: "8.87/10",
     activities: [
       {
         title: "Sergeant - National Cadet Corps (Army Wing)",
